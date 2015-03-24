@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DOM Events</title>
+</head>
+<body>
+	<h1>Hello, World</h1>
+	<input type="text">
+	<script type="text/javascript">
+	
+	var myInput = document.getElementsByTagName("input")[0];
+	var myH = document.getElementsByTagName("h1")[0];
+	
+
+	myInput.addEventListener("keyup", function() { 
+		console.log(myInput.value);
+		myH.innerText = myInput.value 
+	})
+
+	</script>
+</body>
+</html>
